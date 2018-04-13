@@ -7,6 +7,7 @@
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-code-check" ox-mod="code-check" 
         	data-resulturl="{$result_url}" data-activeurl="{$active_url}" data-notifyurl="{$notify_url}">
+        	<center>请稍候...</center>
         	<form>
 	            <xsl:choose>
 	            	<xsl:when test="data/code/_id">

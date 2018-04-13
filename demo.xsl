@@ -9,7 +9,7 @@
         <title>code-check - DEMO</title>
         <link rel="stylesheet" type="text/css" href="https://a.oxm1.cc/css/ea.css" />
         <link rel="stylesheet" type="text/css" href="asset/index.css" />
-        <script src="https://a.oxm1.cc/js/require.js"></script>
+        <script src="https://l.oxm1.cc/3rd/require.js"></script>
       </head>
       <body>
         <div class="layout">
@@ -17,15 +17,16 @@
         </div>
         <script><![CDATA[
           require.config({
+            urlArgs:Math.random(),
             paths: {
-              jquery: 'https://a.oxm1.cc/js/jquery',
-              zepto: 'https://a.oxm1.cc/js/zepto.min',
-              mustache: 'https://a.oxm1.cc/js/mustache',
-              oxjs:'https://a.oxm1.cc/js/oxjs'
+              jquery: 'https://l.oxm1.cc/3rd/jquery',
+              zepto: 'https://l.oxm1.cc/3rd/zepto.min',
+              mustache: 'https://l.oxm1.cc/3rd/mustache',
+              oxjs:'https://a.oxm1.cc/js/oxjs-dev'
             },
             packages:[{name:"oxm",location:'https://a.oxm1.cc/oxm'}]
           });
-          require(['jquery','oxjs','asset/index'],function(undefine,oxjs,Mod){
+          require(['zepto','oxjs','asset/index'],function(undefine,oxjs,Mod){
           Mod && Mod.init && Mod.init($('.J_OXMod'));
           })
         ]]></script>
